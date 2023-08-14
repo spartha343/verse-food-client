@@ -10,7 +10,7 @@ const Order = () => {
     const [orders, setOrders] = useState([]);
     const email = user.email;
     useEffect(() => {
-        fetch(`http://localhost:5000/orders/${email}`)
+        fetch(`https://verse-food-server-spartha343.vercel.app/orders/${email}`)
             .then(res => res.json())
             .then(data => {
                 setOrders(data || []);
@@ -19,7 +19,7 @@ const Order = () => {
 
     const handleConfirmOrder = () => {
         setIsLoading(true);
-        fetch('http://localhost:5000/confirm-order', {
+        fetch('https://verse-food-server-spartha343.vercel.app/confirm-order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -10,7 +10,7 @@ const Control = () => {
     const [orders, setOrders] = useState(useLoaderData());
     const handleConfirmDelivery = (id) => {
         setIsLoading(true)
-        fetch(`http://localhost:5000/on-delivery-completion/${id}`, {
+        fetch(`https://verse-food-server-spartha343.vercel.app/on-delivery-completion/${id}`, {
             method: 'PATCH',
             headers: {
                 "content-type": "application/json"

@@ -48,7 +48,7 @@ export const router = createBrowserRouter([
             {
                 path: '/control',
                 element: <Control></Control>,
-                loader: async () => fetch('http://localhost:5000/orders')
+                loader: async () => fetch('https://verse-food-server-spartha343.vercel.app/orders')
             },
         ]
     }
