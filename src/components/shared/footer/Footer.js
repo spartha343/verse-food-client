@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='text-center mt-5'>
-                <p>Copyright © 2023 - All rights are reserved by Partha Debnath</p>
+                <p>Copyrights © 2023 - All rights are reserved by Partha Debnath</p>
             </div>
         </footer>
     );
