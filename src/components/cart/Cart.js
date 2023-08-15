@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 const Cart = () => {
     const { cart } = useContext(CartContext);
     return (
-        <div className='my-10 min-h-screen'>
+        <div className='my-10 mx-3 min-h-screen'>
             <div className="card max-w-4xl mx-auto bg-neutral shadow-xl">
-                <div className="card-body">
+                <div className="card-body mx-2 p-2">
                     <ul>
                         {
                             cart.map((item, idx) => {

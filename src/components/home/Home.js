@@ -26,13 +26,13 @@ const Home = () => {
     return (
         <div>
             <form className='flex justify-center items-center mt-5 gap-4' onSubmit={handleSearch}>
-                <input type="text" name="searchedText" className='w-72 lg:w-[40%] rounded-md h-9 px-3' placeholder='What are you Looking for?' />
+                <input type="text" name="searchedText" className='w-64 md:w-[40%] rounded-md h-9 px-3' placeholder='What are you Looking for?' />
                 <input type="submit" className="btn btn-outline btn-sm" value='Search' />
             </form>
             {
                 !meals && <div className='flex items-center justify-center text-5xl h-96'>No Such food available</div>
             }
-            <div className='grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 m-5'>
+            <div className='grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 my-5 mx-3'>
                 {
                     meals?.map((meal, idx) => <Meal cart={cart} setCart={setCart} key={idx} meal={meal}></Meal>)
                 }

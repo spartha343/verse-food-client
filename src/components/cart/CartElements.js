@@ -17,12 +17,13 @@ const CartElements = ({ item }) => {
             .then(data => { setMeal(data?.meals[0]) })
     }, [idMeal])
     return (
-        <li className='flex items-center justify-between bg-slate-900 my-5 rounded-xl shadow-xl'>
-            <div className='flex'>
+        <li className='flex items-center justify-between bg-slate-900 my-5 rounded-xl shadow-xl p-0'>
+            <div className='flex flex-auto'>
                 <img src={strMealThumb} alt={strMeal} className='h-14 w-20 rounded-xl' />
-                <div className='ml-3'>
-                    <h3 className='text-xl'>{strMeal}</h3>
-                    <p>Price: ${number * 50} </p>
+                <div className='pl-3'>
+                    <h3 className='text-base hidden sm:block'>{strMeal}</h3>
+                    <h3 className='text-base block sm:hidden'>{strMeal?.slice(0, 6) + '...'}</h3>
+                    <p className='text-sm'>Price: ${number * 50} </p>
                 </div>
             </div>
             <div className='flex items-baseline gap-3 text-lg cursor-pointer'>
