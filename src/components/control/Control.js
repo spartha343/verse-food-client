@@ -28,7 +28,7 @@ const Control = () => {
     }
 
     return (
-        <div className='m-5 min-h-screen'>
+        <div className='mx-3 my-5 min-h-screen'>
             <p className='bg-slate-950 text-center rounded-md p-2'>Note: In production build, this page will be only visible to admins, moderators or controllers</p>
             <h3 className='text-3xl mt-2'>Orders to be delivered:</h3>
             {
